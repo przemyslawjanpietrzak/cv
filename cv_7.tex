@@ -1,0 +1,191 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Przemyslaw} % Your first name
+\familyname{Pietrzak} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Curriculum Vitae}
+%\address{123 Broadway}{City, State 12345}
+%\mobile{(000) 111 1111}
+%\phone{(000) 111 1112}
+%\fax{(000) 111 1113}
+%\email{john@smith.com}
+%\homepage{staff.org.edu/~jsmith}{staff.org.edu/$\sim$jsmith} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+%\extrainfo{additional information}
+\photo[70pt][0.4pt]{pictures/picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+\quote{Software engineer specializing in web applications, enthusiast of new technologies (but only if are better than old ones). Open source and functional programming fan}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	CURRICULUM VITAE
+%----------------------------------------------------------------------------------------
+
+\makecvtitle % Print the CV title
+
+%\section{Masters Thesis}
+%
+%\cvitem{Title}{\emph{Money Is The Root Of All Evil -- Or Is It?}}
+%\cvitem{Supervisors}{Professor James Smith \& Associate Professor Jane Smith}
+%\cvitem{Description}{This thesis explored the idea that money has been the cause of untold anguish and suffering in the world. I found that it has, in fact, not.}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+%\subsection{Vocational}
+
+\cventry{01.2017 -}{Software Engineer}{FSecure}{}{}{Develop, maintenance and pay off the technology debt
+\begin{itemize}
+\item Implement new fontend logic and views
+\item Overwrite development, building and deployment tools
+\item Write and support selenum tests
+\item Configurate Jenkin scripts
+%\begin{itemize}
+%\item Paper jam
+%\item Software issues:
+%\begin{itemize}
+%\item Word not sending the correct data to printer
+%\item Windows trying to print in letter format
+%\end{itemize}
+%\item Coffee spilled inside printer
+%\item Coffee spilled inside printer
+%\end{itemize}
+%\item Broke the office record for number of kitten pictures in cubicle
+\end{itemize}}
+
+\cventry{11.2016 -}{Co-founder and Product Engineer}{Help Desk itepe.pl}{}{}{Writing task managemtn application
+    \begin{itemize}
+        \item Planing architecture and features
+        \item Implement buissnes logic, UI and websocket communitaion
+        \item Unit and selenium testing
+    \end{itemize}}
+
+\cventry{05.2016-12.2016}{JavaScript Developer}{ClinWork}{}{}{Develop, build UI and support Desk applications
+    \begin{itemize}
+        \item Implement business logic by reactive streams
+        \item Integrate client side with XMPP and websocket protocol
+        \item Build UI on react and redux
+        \item Unit and selenium testing
+    \end{itemize}
+}
+
+\cventry{06.2015-05.2016}{JavaScript Developer}{UsabilityTools}{}{}{Develop, build UI and support Session Recording
+    \begin{itemize}
+        \item Tracing users actions, DOM changes
+        \item Present tracked actions as movie
+        \item Build UI on AngularJS
+    \end{itemize}
+}
+
+\cventry{06.2015-05.2016}{Junior Web Developer}{IT Collectiv}{}{}{Building web applications using Python, JavaScript, PostgreSQL
+    \begin{itemize}
+        \item Building static web application
+    \end{itemize}
+}
+
+
+%----------------------------------------------------------------------------------------
+%	Education SECTION
+%----------------------------------------------------------------------------------------
+%
+\section{Education}
+
+\cventry{2014 -}{Computer Science}{Poznan University of Technology} {Berkeley}{\textit{GPA -- 8.0}}{First Class Honours}
+\cventry{2011 - 2014}{Power Engineering}{Poznan University of Technology}{Berkeley}{\textit{GPA -- 7.5}}{Specialized in Commerce}
+
+
+
+%----------------------------------------------------------------------------------------
+%	Volunteer SECTION
+%----------------------------------------------------------------------------------------
+%
+\section{Volunteer}
+
+\cventry{2014 -}{Mentor}{PyLadies Poland} {}{}{Teching beginners programmers python}
+\cventry{07.2016}{Volunteer}{Polyconf} {}{}{Keeping conference stuff}
+\cventry{2013 - 2014}{Core member}{Web application science Club}{Poznan University of Technology}{}{Organize technology meetups}
+
+
+
+%\subsection{Miscellaneous}
+
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+%
+%\section{Awards}
+%
+%\cvitem{2011}{School of Business Postgraduate Scholarship}
+%\cvitem{2010}{Top Achiever Award -- Commerce}
+
+%----------------------------------------------------------------------------------------
+%	SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Skills}
+
+%\cvitem{Architecture}{Design HTTP/Websocket API, Frontend application }
+\cvitem{Frontend}{Manage state of application, implementing business and design }
+\cvitem{Backend}{Design API architecture, database model}
+\cvitem{Testing}{End to end testig, Integration testing (HTTP and XMPP), unit testing}
+\cvitem{Methodologies}{Countinues integration, TDD, scrum, git flow}
+\cvitem{Soft}{Teachning, Assertiveness, Public speaking}
+
+%----------------------------------------------------------------------------------------
+%	Technologies SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Technologies}
+
+\cvitem{JavaScript}{AngularJS, React, Rx, RamdaJS, mocha/jasmine, TypeScript, DOM}
+\cvitem{Python}{Django, Flask, Tornado, pyTest}
+\cvitem{Selenium}{PyTest Selenium, Protractor, Nightwatch.js}
+\cvitem{Databases}{SQL, Postgres, Elastic(basic)}
+\cvitem{Other}{Linux, Bash, Jenkins, Git, CSS}
+\cvitem{Iin progress}{Scala, Go}
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Languages}
+
+\cvitemwithcomment{English}{Fluent}{}
+\cvitemwithcomment{Polish}{Mothertongue}{}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Interests}
+
+\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+
+\cvlistdoubleitem{Old movies}{Swimming}
+\cvlistdoubleitem{Technology}{Blues music}
+%\cvlistitem{Running}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
