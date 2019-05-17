@@ -1,0 +1,282 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Przemysław}{Beigert}
+\title{Curriculum Vitae}                               % optional, remove / comment the line if not wanted
+\address{św Leonarda 6b}{60-654 Poznań Poland}{}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{+48 724 509 538}                   % optional, remove / comment the line if not wanted
+% \phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
+% \phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{przemyslaw.jan.beigert@protonmail.com}                               % optional, remove / comment the line if not wanted
+\homepage{github.com/przemyslawjanpietrzak}                         % optional, remove / comment the line if not wanted
+\extrainfo{stackoverflow.com/users/5914352/przemyslaw-pietrzak}                 %
+\extrainfo{twitter.com/przemyslawjanp}                 %optional, remove / comment the line if not wanted
+\photo[64pt][0.6pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+\quote{Software engineer, enthusiast of new technologies (but only if are better than old ones). Open source and functional programming fan.}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+
+\section{Experience}
+% \subsection{Vocational}
+
+\cventry{05.2018--now}{Senior Software Developer}{Espeo Software}{}{}{{}%
+Projects:%
+\begin{itemize}%
+\item Trade.io Edu Portal;
+  \begin{itemize}%
+  \item Building and planning education portal with cryptocurrency knowledge
+  \item Technologies
+  \begin{itemize}
+    \item Angular, Ngrx, Bootstrap, Cypress.io
+    \item Ruby on Rails, Firebase, Docker, Gitlab CI;
+    \end{itemize}
+  \end{itemize}
+\item Taito;
+  \begin{itemize}%
+  \item Rewritting finish job portal from static web application into SPA with REST.
+  \item Technologies
+  \begin{itemize}
+    \item Angular, Ngrx, Bootstrap, Cypress.io, Browserstack
+    \item Symphony, PHP, Docker, BambooCI
+    \end{itemize}
+  \end{itemize}
+\item React and Share;
+  \begin{itemize}%
+  \item Develop and refactor application for tracing reactions from external sources.
+  \item Technologies
+  \begin{itemize}
+    \item AngularJS, Redux, React, Webpack, Puppeteer
+    \item ExpressJS, MongoDB, CircleCI
+    \end{itemize}
+  \end{itemize}
+\end{itemize}}
+
+\cventry{03.2018--now}{JavaScript Developer}{Omnilogy}{}{}{Maintence plugin for tracking user actions in browser\newline{}%
+Projects:%
+\begin{itemize}%
+\item Trade.io Edu Portal;
+  \begin{itemize}%
+  \item Fixing bugs from different plugin using apps 
+  \item Improving browser support
+  \item Technologies
+  \begin{itemize}
+    \item TypeScript, Inversify, Webpack, Puppeteer, Jenkins, 
+    \end{itemize}
+  \end{itemize}
+\end{itemize}}
+\subsection{Part time project}
+
+\cventry{04.2018--05.2018}{Lecturer}{CodersLabs}{}{}{Lectures and exercises for beginner programmers\newline{}%
+Topics:%
+\begin{itemize}%
+\item React, CSS, SASS;
+\item Python and Django;
+\end{itemize}}
+\subsection{Part time job}
+
+\cventry{01.2017--05.2018}{Software Engineer}{F-Secure}{}{}{Develop, maintenance and pay off the technological debt\newline{}%
+Projects:%
+\begin{itemize}%
+\item  Rapid Detection Service
+  \begin{itemize}%
+  \item Develop frontend application for present data from different services
+  \item Technologies:
+  \begin{itemize}
+    \item AngularJS, TypeScript, Webpack, Karma
+    \end{itemize}
+  \end{itemize}
+\item Radar
+  \begin{itemize}%
+  \item Rewriting vulnerability scanning and management platform, allows to identify and manage both internal and external threats and report risks.
+  \item Refactoring and pay off tech dept.
+  \item Technologies:
+  \begin{itemize}
+    \item AngularJS, Webpack, Karma, Protractor
+    \item Dotnet Core, Jenkins
+    \end{itemize}
+  \end{itemize}
+\end{itemize}}
+
+\cventry{12.2016--06.2018}{Co-founder and Product Engineer}{Help Desk itepe.pl}{}{}{Writing task management application.\newline{}%
+Projects:%
+\begin{itemize}%
+\item Planning architecture and features
+\item Implement business logic, UI and websocket communication
+\item Unit and end to end testing
+  \begin{itemize}%
+  \item Technologies:
+  \begin{itemize}
+    \item AngularJS, TypeScript, Webpack, BackstopJS
+    \item Django, Tornado, pytest-selenium
+    \item ElasticSearch, Jenkins
+    \end{itemize}
+  \end{itemize}
+\end{itemize}}
+\subsection{Part time project}
+
+\cventry{07.2015--12.2016}{JavaScript Developer}{ClinWork}{}{}{Develop, build UI and support Desk applications.{}%
+\begin{itemize}%
+\item Implement business logic by reactive streams
+\item Integrate client side with XMPP and websocket protocol
+\item Build UI
+\item Unit and end to end testing
+  \begin{itemize}%
+  \item Technologies:
+  \begin{itemize}
+    \item React, Redux, Rx, Stanza.io, NightwatchJS
+    \item Django, Ejabberd, Ansible
+    \end{itemize}
+  \end{itemize}
+\end{itemize}}
+
+\cventry{06.2014--07.2015}{JavaScript Developer}{UsabilityTools}{}{}{Develop, build UI and support Session Recording.{}%
+\begin{itemize}%
+\item Tracing users actions, DOM changes
+\item Present tracked actions as movie
+\item Build UI on AngularJS
+\end{itemize}}
+
+\cventry{05.2015--06.2016}{Junior Python Developer}{IT Collectiv}{}{}{Building static web applications.{}%
+\begin{itemize}%
+  \item Technologies:
+  \begin{itemize}
+    \item Python, Django, jQuery, Bootstrap
+    \end{itemize}
+\end{itemize}}
+
+\section{Education}
+\cventry{2014-2019}{Computer Science}{Poznan University of Technology}{}{}{Building static web applications.{}%
+\begin{itemize}%
+  \item Bachelor thesis:
+  \begin{itemize}
+    \item Web application for face recognision
+    \item Build with Tensorflow, VueJS, Tornado and AWS SageMaker
+    \end{itemize}
+\end{itemize}}
+\cventry{2011 - 2014}{Power Engineering}{Poznan University of Technology}{}{}{Electrical Engineering Department}
+
+\section{Volunteer}
+\cventry{3.2018, 6.2019}{Mentor}{GirlsJS}{}{}{Leading workshops about programming in JavaScript for beginners.}
+\cventry{3.2018, 6.2019}{Mentor}{PyLadies}{}{}{Teaching beginners programmers python.}
+\cventry{2012 - now}{Blood Donation}{}{}{}{}
+
+
+\section{Skills}
+\cvitemwithcomment{Frontend}{Manage state of application, implementing business logic and design}{}
+\cvitemwithcomment{Backend}{Design API architecture, database schema, implement endpoints}{}
+\cvitemwithcomment{Testing}{End to end, Integration (HTTP and WS), Unit, Visual regression}{}
+\cvitemwithcomment{OPS}{CI/CD tools administration, Contenerization, Version control flow}{}
+\cvitemwithcomment{Soft}{Teaching, Public speaking, Assertiveness}{}
+% \cvitemwithcomment{Methodologies}{Continues integration, TDD, Scrum, Git flow}{}
+
+
+\section{Certifications}
+\cventry{2017}{Scala}{Coursera}{Ecole polytechnique}{}{{}%
+\begin{itemize}%
+  \item Functional Program Design
+  \item Functional Programming Principles
+\end{itemize}}
+
+% \section{Certifications thesis}
+% \cvitem{title}{\emph{Title}}
+% \cvitem{supervisors}{Supervisors}
+% \cvitem{description}{Short thesis abstract}
+
+
+% \section{Technologies}
+% \cvitemwithcomment{JavaScript}{Angular, TypeScript, Rx, Redux, React, AngularJS, Webpack, DOM}{}
+% \cvitemwithcomment{Backend}{Django, Flask, PyTest, Express.js, Mongoose}{}
+% \cvitemwithcomment{Selenium}{Cypress, PyTest Selenium, Protractor, Nightwatch.js}{}
+% \cvitemwithcomment{OPS}{Docker, Bash, Linux, AWS (basic)}{}
+
+
+\section{Languages}
+\cvitemwithcomment{English}{Fluent}{}
+\cvitemwithcomment{Polish}{Native}{}
+
+\section{Interests}
+\cvdoubleitem{}{Old movies (50+)}{}{Blues music}
+\cvdoubleitem{}{Ice bathing}{}{Swimming}
+\cvdoubleitem{}{Techonolgy}{}{}
+
+% \section{Interests}
+% \cvitem{hobby 1}{Description}
+% \cvitem{hobby 2}{Description}
+% \cvitem{hobby 3}{Description}
+
+% \section{Extra 1}
+% \cvlistitem{Item 1}
+% \cvlistitem{Item 2}
+% \cvlistitem{Item 3. This item is particularly long and therefore normally spans over several lines. Did you notice the indentation when the line wraps?}
+
+% \section{Extra 2}
+% \cvlistdoubleitem{Item 1}{Item 4}
+% \cvlistdoubleitem{Item 2}{Item 5\cite{book1}}
+% \cvlistdoubleitem{Item 3}{Item 6. Like item 3 in the single column list before, this item is particularly long to wrap over several lines.}
+
+% \section{References}
+% \begin{cvcolumns}
+%   \cvcolumn{Category 1}{\begin{itemize}\item Person 1\item Person 2\item Person 3\end{itemize}}
+%   \cvcolumn{Category 2}{Amongst others:\begin{itemize}\item Person 1, and\item Person 2\end{itemize}(more upon request)}
+%   \cvcolumn[0.5]{All the rest \& some more}{\textit{That} person, and \textbf{those} also (all available upon request).}
+% \end{cvcolumns}
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+\end{document}
+
+
+%% end of file `template.tex'.
